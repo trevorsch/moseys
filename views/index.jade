@@ -1,12 +1,24 @@
-extends layout
-
-block content
-  h1= title
-  p 
-    h2 Contact
-  p
-    h3 Phone: 850-215-0425
-    h3 Email: moseysdowntown@gmail.com
-    h3 Address: 425 Grace Ave, Panama City, Florida 32401
-    h3 Hours: Mon-Sun:	11:00 am-4:00 am    
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript' src='https://maps.googleapis.com/maps/api/js?').
+    script(type='text/javascript').
+      function initialize(){
+      var centerLat = new google.maps.LatLng(30.155706, -85.661574);
+      var mapOptions = {
+      center: centerLat,
+      zoom: 11,
+      };
+      var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    h1= title
+    p 
+      h2 Contact
+    p
+      h3 Phone: 850-215-0425
+      h3 Email: moseysdowntown@gmail.com
+      h3 Address: 425 Grace Ave, Panama City, Florida 32401
+      h3 Hours: Mon-Sun:	11:00 am-4:00 am
+    div#map-canvas    
     
