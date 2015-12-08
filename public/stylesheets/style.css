@@ -8,6 +8,11 @@ a {
 }
 
 #map-canvas {
-  width: 500px;
-  height: 500px;
+  width: 50em;
+  height: 50em;
+  display: inline-block;
+}
+
+#menu {
+  width: 70%;
 }
