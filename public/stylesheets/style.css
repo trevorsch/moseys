@@ -8,8 +8,8 @@ a {
 }
 
 #map-canvas {
-  width: 200px;
-  height: 200px;
+  width: 20%;
+  height: 309px;
   float: right;
   clear: both;
 }
